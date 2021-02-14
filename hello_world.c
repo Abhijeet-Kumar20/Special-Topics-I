@@ -2,6 +2,6 @@
 #include<stdio.h>
 int main()
 {
-printf("Abhijeet\n");
+printf("Abhijeet\n");\\program to print a name
 return 0;
 }
