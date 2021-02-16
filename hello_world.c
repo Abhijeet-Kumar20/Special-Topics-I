@@ -1,7 +1,7 @@
-//Write the program to print "Hello World !"
+//Write the program to print "Your Name"
 #include<stdio.h>
 int main()
 {
-printf("Abhijeet\n");\\program to print a name
+printf("Abhijeet\n");
 return 0;
 }
