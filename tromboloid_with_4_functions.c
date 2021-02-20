@@ -11,7 +11,7 @@ float input()
 float find_volume(float a, float b, float c)
 {
     float volume;
-    volume = (1/3)*((a*b*c)+(b/c));
+    volume = ((a*b*c)+(b/c))*1/3;
     return volume;
 }
 
