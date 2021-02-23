@@ -6,12 +6,13 @@ int n, sum=0;
 printf("Enter the total number of numbers:\n");
 scanf("%d", &n);
 int a[n];
-for(int i=0; i<n; i++)
+for(int i=1; i<=n; i++)
 {
-printf("Enter number %d: ", (i+1));
+printf("Enter number %d: ", i);
 scanf("%d", &a[i]);
 sum = sum + a[i];
 }
-printf("The final sum is %d\n", sum);
+printf("The final sum is: %d\n",sum);
 return 0;
 }
+
