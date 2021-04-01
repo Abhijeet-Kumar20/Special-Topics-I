@@ -15,11 +15,9 @@ int gcd(int x, int y);
 Frac compute();
 int output(Frac sum);
 
- 
-
 int gcd(int x, int y)
 {
- int i,flag;
+ int i, flag;
  for(i = 1; i <= x && i <= y; i++)
    {
        if(x % i == 0 && y % i == 0)
@@ -32,7 +30,7 @@ Frac sum(Frac F1, Frac F2)
 {
  Frac F3;
  int c;
- F3.num = ((F1.num*F2.den)+ (F2.num*F1.den));
+ F3.num = ((F1.num*F2.den) + (F2.num*F1.den));
  F3.den = F1.den*F2.den;
  c = gcd(F3.num,F3.den);
  F3.num = F3.num/c;
@@ -42,12 +40,12 @@ Frac sum(Frac F1, Frac F2)
  
 Frac compute()
 {
- int terms,i;
- Frac flag,z;
+ int terms, i;
+ Frac flag, z;
  printf("Enter the no. of terms: \n");
- scanf("%d",&terms);
+ scanf("%d", &terms);
  Frac f[terms];
- for(i=0;i<terms;i++)
+ for(i = 0; i < terms; i++)
 {
    printf("Enter the fraction %d\n",i+1);
    f[i] = input();
@@ -58,9 +56,9 @@ Frac compute()
  }
  else{
    flag = f[0];
-   for(i=0;i<terms-1;i++)
+   for(i = 0; i < terms-1; i++)
 {
-     z = sum(flag,f[i+1]);
+     z = sum(flag, f[i+1]);
      flag = z;
    }
  }
@@ -85,8 +83,8 @@ Frac input()
 {
  Frac f;
  printf("Enter the numerator :\n ");
- scanf("%d",&f.num);
+ scanf("%d", &f.num);
  printf("Enter the denominator :\n ");
- scanf("%d",&f.den);
+ scanf("%d", &f.den);
  return f;
 }
